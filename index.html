@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bb6e3fb653.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Santos Sánchez | Portfolio</title>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <p class="navbar__title"><b>Santos Sánchez</b></p>
+            <ul class="navbar__menu" id="navbar__menu">
+                <li class="menu__li"><i class="fa-solid fa-user"></i><a class="menu__a" href="#about">About</a></li>
+                <hr class="menu__hr">
+                <li class="menu__li"><i class="fa-solid fa-laptop-code"></i><a class="menu__a" href="#projects">Projects</a></li>
+                <hr class="menu__hr">
+                <li class="menu__li"><i class="fa-solid fa-code"></i><a class="menu__a" href="#skills">Skills</a> </li>
+            </ul>
+            <div class="navbar__hamburguer">
+                <input class="checkbox" type="checkbox">
+                <i class="icons fa-solid fa-bars"></i>
+                <!-- <i class="icons fa-regular fa-circle-xmark"></i> -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <div class="about__image">
+                <img class="image__perfil" id="about" src="images/about.png" alt="Santos Sánchez">
+            </div>
+            <div class="about__text">
+                    <h2 class="text__title">Hi. I'm Santos. <span class="text__career">Web Developer.</span> </h2>
+                    <p class="text__paragraph">I enjoy creating stuffs focusing on product design and development. I like to build to have fun, help people and show my work to the world.</p>
+                    <hr class="text__hr">
+            </div>
+            <div class="about__social">
+                <a href="https://www.linkedin.com/in/goldsanchez/"><img class="social__img" src="images/social-linkedin.png" alt=""></a>
+                <a href="https://github.com/Goldsanchez"><img class="social__img" src="images/social-github.png" alt=""></a>
+                <a href="https://twitter.com/Goldsanchez"><img class="social__img" src="images/social-twitter.png" alt=""></a>
+            </div>
+        </section>
+        <section class="projects">
+            <h2 class="projects__title" id="projects">Projects</h2>
+            <div class="cards">
+                <div class="card">
+                    <img class="card__image" src="images/calculator.jpg" alt="Card">
+                    <h3 class="card__title">Calculator</h3>
+                    <p class="card__paragraph">Application to add, subtract, divide and multiply.</p>
+                    <h5>Technologies used</h5>
+                    <code>HTML, CSS and JavaScript. </code>
+                    <div class="card__buttons">
+                        <button class="card__buttons__project"><a href="https://goldsanchez.github.io/calculator-app-main/">View Project</a></button>
+                        <button class="card__buttons__code"><a href="https://github.com/Goldsanchez/calculator-app-main">View code</a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="images/tip-calculator.jpg" alt="Card">
+                    <h3 class="card__title">Tip Calculator</h3>
+                    <p class="card__paragraph">Calculate the total and individual tip that should be left in a restaurant.</p>
+                    <h5>Technologies used</h5>
+                    <code>HTML, CSS and JavaScript. </code>
+                    <div class="card__buttons">
+                        <button class="card__buttons__project"><a href="https://goldsanchez.github.io/tip-calculator-app-main/">View Project</a></button>
+                        <button class="card__buttons__code"><a href="https://github.com/Goldsanchez/tip-calculator-app-main">View Code</a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="images/3-columns.jpg" alt="Card">
+                    <h3 class="card__title">3 Columns Preview Card</h3>
+                    <p class="card__paragraph">Show 3 columns preview card components.</p>
+                    <h5>Technologies used</h5>
+                    <code>HTML, CSS and JavaScript. </code>
+                    <div class="card__buttons">
+                        <button class="card__buttons__project"><a href="https://goldsanchez.github.io/3-column-preview-card-component-main/">View Project</a></button>
+                        <button class="card__buttons__code"><a href="https://github.com/Goldsanchez/3-column-preview-card-component-main">View Code</a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="images/order-summary.jpg" alt="Card">
+                    <h3 class="card__title">Order Summary</h3>
+                    <p class="card__paragraph">It is a component to subscribe to a monthly music plan.</p>
+                    <h5>Technologies used</h5>
+                    <code>HTML, CSS and JavaScript. </code>
+                    <div class="card__buttons">
+                        <button class="card__buttons__project"><a href="https://goldsanchez.github.io/order-summary-component-main/">View Project</a></button>
+                        <button class="card__buttons__code"><a href="https://github.com/Goldsanchez/order-summary-component-main">View Code</a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="images/agenda-django.png" alt="Card">
+                    <h3 class="card__title">Agenda Django</h3>
+                    <p class="card__paragraph">Create, update and delete your contacts.</p>
+                    <h5>Technologies used</h5>
+                    <code>HTML, CSS and JavaScript. </code>
+                    <div class="card__buttons">
+                        <button class="card__buttons__project"><a href="https://agenda-django-pe.herokuapp.com/">View Project</a></button>
+                        <button class="card__buttons__code"><a href="https://github.com/Goldsanchez/agenda-django">View Code</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <h2 class="skills__title" id="skills">Skills</h2>
+            <div class="skills__languages">
+                <div class="languages">
+                    <img class="languages__img languages__html" src="images/language-html.png" alt="">
+                    <p class="language__title">HTML</p>
+                </div>
+                <div class="languages">
+                    <img class="languages__img languages__css" src="images/language-css.png" alt="">
+                    <p class="language__title">CSS</p>
+                </div>
+                <div class="languages">
+                    <img class="languages__img languages__javascript" src="images/language-javascript.png" alt="">
+                    <p class="language__title">JavaScript</p>
+                </div>
+                <div class="languages">
+                    <img class="languages__img languages__python" src="images/language-python.png" alt="">
+                    <p class="language__title">Python</p>
+                </div>
+                <div class="languages">
+                    <img class="languages__img languages__bootstrap" src="images/language-bootstrap.png" alt="">
+                    <p class="language__title">Bootstrap</p>
+                </div>
+                <div class="languages">
+                    <img class="languages__img languages__react" src="images/language-react.png" alt="">
+                    <p class="language__title">React</p>
+                </div>
+                <div class="languages">
+                    <img class="languages__img languages__django" src="images/language-django.png" alt="">
+                    <p class="language__title">Django</p>
+                </div>
+                <div class="languages">
+                    <img class="languages__img languages__git" src="images/language-git.png" alt="">
+                    <p class="language__title">Git</p>
+                </div>
+                <div class="languages">
+                    <img class="languages__img languages__wordpress" src="images/language-wordpress.png" alt="">
+                    <p class="language__title">WordPress</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="footer__paragraph"><b>Santos Sánchez</b>&nbsp;&nbsp;&nbsp;© 2023 All Rights Reserved</p>
+    </footer>
+</body>
+</html>
