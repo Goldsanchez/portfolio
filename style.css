@@ -1,4 +1,9 @@
+:root{
+    --color-orange: #EB7565;
+    --color-barckground:#FFF7F0;
+    --color-white: white;
 
+}
 
 *{
     margin: 0px;
@@ -10,7 +15,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: #FFF7F0;
+    background-color: var(--color-barckground);
     justify-content: center;
     align-items: center;
 
@@ -29,7 +34,7 @@ body{
 /* Iconos menu */
 .fa-solid{
     margin-right: 7px;
-    color: #EB7565;
+    color: var(--color-orange);
 }
 .fa-solid.fa-user{
     margin-right: 12px;
@@ -37,7 +42,7 @@ body{
 }
 
 .navbar__title{
-    color: #EB7565;
+    color: var(--color-orange);
 }
 
 .navbar__menu{
@@ -51,7 +56,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: white;
+    background-color: var(--color-white);
     width: 200px;
     position: absolute;
     top: 60px;
@@ -66,10 +71,10 @@ body{
     color: black;
 }
 .menu__a:hover{
-    color: #EB7565;
+    color: var(--color-orange);
 }
 .menu__hr{
-    border: 1px solid #FFF7F0;
+    border: 1px solid var(--color-barckground);
 }
 
 .navbar__menu li{
@@ -85,7 +90,7 @@ body{
     position: absolute;
     top: 19px;
     font-size: 20px;
-    color: #EB7565;
+    color: var(--color-orange);
 }
 
 .checkbox{
@@ -95,20 +100,6 @@ body{
     width: 20px;
     height: 20px;
 }
-
-/* Condición Menu */
-/* .fa-circle-xmark{
-    display: none;
-}
-
-.checkbox:checked ~ .fa-bars{
-    display: none;
-}
-
-.checkbox:checked ~ .fa-circle-xmark{
-    display: block;
-} */
-/* Condición Menu */
 
 /* About */
 
@@ -141,7 +132,8 @@ body{
 }
 
 .text__career{
-    font-size: 28px;
+    display: block;
+    font-size: 22px;
     font-weight: 100;
 }
 
@@ -177,15 +169,21 @@ body{
 .cards{
     display: grid;
     gap: 20px;
+
 }
 .card{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     text-align: center;
-    background-color: white;
+    background-color: var(--color-white);
     padding: 0px 0px 20px 0px;
     border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.card:hover{
+    box-shadow: 0 0 5px var(--color-orange);
 }
 
 .card__image{
@@ -200,17 +198,17 @@ body{
 }
 
 .card__buttons__project, .card__buttons__code{
-    background-color: #EB7565;
+    background-color: var(--color-orange);
     border: none;
     width: 100px;
     height: 30px;
-    color: #FFF7F0;
+    color: var(--color-barckground);
     border-radius: 7px;
     cursor: pointer;
 }
 .card__buttons__project a, .card__buttons__code a{
     text-decoration: none;
-    color: #FFF7F0;
+    color: var(--color-barckground);
 }
 
 /* Skills */
@@ -239,7 +237,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: white;
+    background-color: var(--color-white);
     width: 150px;
     height: 55px;
     border-radius: 10px;
@@ -287,6 +285,7 @@ footer{
         display: grid;
         width: 1000px;
         grid-row-gap: 0px;
+
         grid-template-areas: 
             "uno dos"
             "uno tres";
@@ -317,6 +316,11 @@ footer{
         width: 80%;
     }
 
+    .text__career{
+        display: inline;
+        font-size: 28px;
+    }
+
 
     .projects{
         width: 1000px;
@@ -333,12 +337,18 @@ footer{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-self: center;
         align-self: center;
-        grid-auto-flow: dense-column;
+        grid-column-start: 2;
     }
 
     .languages{
         justify-self: center;
         align-self: center;
+        
+    }
+
+    .languages.wordpress{
+        grid-column-start: 1;
+        grid-column-end: 5;
     }
     
 
