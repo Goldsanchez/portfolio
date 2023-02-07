@@ -329,6 +329,10 @@ footer{
     .cards{
        grid-template-columns: 1fr 1fr 1fr; 
     }
+    .agenda-django{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
 
     .skills{
         width: 1000px;
