@@ -197,6 +197,10 @@ body{
     padding: 0 20px;
 }
 
+.card__buttons{
+    align-content: flex-start;
+}
+
 .card__buttons__project, .card__buttons__code{
     background-color: var(--color-orange);
     border: none;
